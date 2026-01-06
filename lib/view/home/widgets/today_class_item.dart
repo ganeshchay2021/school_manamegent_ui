@@ -3,12 +3,11 @@ import 'package:flutter/material.dart';
 import '../../../constant/colors.dart';
 
 class TodayClassItem extends StatelessWidget {
-  final String name;
-  final String time;
-  final String classLocation;
-  final String faculty;
-  final String profile;
-
+  final String? name;
+  final String? time;
+  final String? classLocation;
+  final String? faculty;
+  final String? profile;
 
   const TodayClassItem({
     super.key,
@@ -17,7 +16,6 @@ class TodayClassItem extends StatelessWidget {
     required this.classLocation,
     required this.faculty,
     required this.profile,
-
   });
 
   @override
@@ -37,7 +35,7 @@ class TodayClassItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(time, style: TextStyle(fontWeight: FontWeight.w800)),
+                Text(time!, style: TextStyle(fontWeight: FontWeight.w800)),
                 Text(
                   "AM",
                   style: TextStyle(
@@ -58,7 +56,7 @@ class TodayClassItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "The Basic of Topography |||",
+                  faculty!,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(fontSize: 16),
@@ -69,7 +67,7 @@ class TodayClassItem extends StatelessWidget {
                     SizedBox(width: 5),
                     Expanded(
                       child: Text(
-                        "Room C1, Faculty of Art & Design Building",
+                        classLocation!,
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
                         style: TextStyle(fontSize: 16, color: Colors.grey),
@@ -86,15 +84,13 @@ class TodayClassItem extends StatelessWidget {
                         shape: BoxShape.circle,
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: NetworkImage(
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAIDofZmj1m9r3XF2F5HcE6fpIHmsifPKzw&s",
-                          ),
+                          image: NetworkImage(profile!),
                         ),
                       ),
                     ),
                     SizedBox(width: 5),
                     Text(
-                      "Disha Pathani",
+                      name!,
                       overflow: TextOverflow.ellipsis,
                       maxLines: 1,
                       style: TextStyle(fontSize: 15, color: Colors.grey),
