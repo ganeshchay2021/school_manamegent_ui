@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:school_managementui_app/view/home/home_Screen.dart';
 
 class SchoolManagementMainScreen extends StatefulWidget {
   const SchoolManagementMainScreen({super.key});
@@ -12,7 +13,7 @@ class _SchoolManagementMainScreenState
     extends State<SchoolManagementMainScreen> {
   int currentIndex = 0;
   List<Widget> screens = [
-    Scaffold(body: Center(child: Text("Home"))),
+    HomeScreen(),
     Scaffold(body: Center(child: Text("insert_chart"))),
     Scaffold(body: Center(child: Text("done"))),
     Scaffold(body: Center(child: Text("calendar_today"))),
@@ -23,7 +24,7 @@ class _SchoolManagementMainScreenState
     return Scaffold(
       body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        iconSize: 30,
+        iconSize: 25,
 
         currentIndex: currentIndex,
         onTap: (value) {
