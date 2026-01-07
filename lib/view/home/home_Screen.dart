@@ -105,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Positioned(
             top: 200,
             child: Container(
-              // padding: EdgeInsets.symmetric(horizontal: 20),
+        
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
@@ -158,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Padding(
-                      padding: EdgeInsetsGeometry.only(left: 20),
+                      padding: EdgeInsets.only(left: 20),
                       child: Row(
                         children: [
                           YourTaskItem(

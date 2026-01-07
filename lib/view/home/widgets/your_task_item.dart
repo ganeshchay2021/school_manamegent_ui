@@ -36,7 +36,7 @@ class YourTaskItem extends StatelessWidget {
               CircleAvatar(radius: 4, backgroundColor: Colors.red),
               SizedBox(width: 5),
               Text(
-                "$days days left",
+                "${days!} days left",
                 style: TextStyle(
                   fontSize: 17,
                   fontWeight: FontWeight.w600,
