@@ -49,7 +49,7 @@ List<Task> tasks = [
   Task(
     currentTime: "01:00",
     remainingTime: "1 h 45 min",
-    title: "Typography",
+    title: "Typography III",
     subtitle: "The Basic of Typography I",
     profileImage:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHDRlp-KGr_M94k_oor4Odjn2UzbAS7n1YoA&s",

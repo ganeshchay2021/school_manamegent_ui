@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:school_managementui_app/view/calendar/today_calendar.dart';
 import 'package:school_managementui_app/view/home/home_screen.dart';
 
 class SchoolManagementMainScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _SchoolManagementMainScreenState
     HomeScreen(),
     HomeScreen(),
     HomeScreen(),
-    HomeScreen(),
+    TodayCalendar(),
     HomeScreen(),
   ];
 

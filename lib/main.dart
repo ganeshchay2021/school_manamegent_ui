@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
           landscapeLayout: BottomNavigationBarLandscapeLayout.linear,
-
           enableFeedback: true,
           selectedIconTheme: IconThemeData(
             size: 25,
